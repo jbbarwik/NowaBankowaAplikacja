@@ -16,10 +16,10 @@ public class Bank {
         konto2.wplata(wpłatain);
 
         System.out.println("Podaj wartość przelewu z 2 na 1");
-        Scanner innn = new Scanner(System.in);
-        int przelewin = innn.nextInt();
+        //Scanner innn = new Scanner(System.in);
+       // int przelewin = innn.nextInt();
 
-        konto2.przelewNa(konto1, przelewin); ///<---- wywołanie przelewu
+        konto2.przelewNa(konto1, Klawisze.przelewin); ///<---- wywołanie przelewu
 
         System.out.println("saldo konta1: "+konto1.saldo);
         System.out.println("saldo konta2: "+konto2.saldo);

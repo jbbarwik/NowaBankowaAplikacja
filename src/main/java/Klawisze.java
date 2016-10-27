@@ -1,9 +1,8 @@
-//import java.util.Scanner;
+import java.util.Scanner;
 
-//public class Klawisze {
- //   public static void main(String[] args) {
-   //     Scanner innn = new Scanner(System.in);
-    //    int przelewin = innn.nextInt();
+public class Klawisze {
 
-    //}
-//}
+        static Scanner innn = new Scanner(System.in);
+        static int przelewin = innn.nextInt();
+                ////Dlaczego przelew in musi być statyczne???///
+    }
