@@ -1,28 +1,35 @@
+import java.io.PrintStream;
 import java.util.Scanner;
 
 public class Bank {
 
+    @Deprecated
     public void zrobOperacje(Scanner inn) {
+        PrintStream komunikat = System.out;
+        zrobOperacje(inn, komunikat);
+    }
+
+    public void zrobOperacje(Scanner inn, PrintStream komunikat) {
         Konto konto1 = new Konto("123456789", "Kowalski", 0);
         Konto konto2 = new Konto("123456766", "Kowalska", 0);
         //int wplatain = innn.nextInt();
 
-        System.out.println("Podaj wartość wpłaty na konto2");
+        komunikat.println("Podaj wartość wpłaty na konto2");
 
         int wpłatain = inn.nextInt(); ///<---- nowa zmienna przechowująca dane ze skannera
 
         konto2.wplata(wpłatain); ///<---wywołanie wpłaty
 
-        System.out.println("Podaj wartość przelewu z 2 na 1");
+        komunikat.println("Podaj wartość przelewu z 2 na 1");
 
         int przelewin = inn.nextInt(); ///<-nowa zmienna przechowująca dane ze skannera
         konto2.przelewNa(konto1, przelewin); ///<---- wywołanie przelewu
 
-        System.out.println("saldo konta1: "+konto1.saldo);
-        System.out.println("saldo konta2: "+konto2.saldo);
+        komunikat.println("saldo konta1: "+konto1.saldo);
+        komunikat.println("saldo konta2: "+konto2.saldo);
 
         String ss = konto1.toString();
-        System.out.println(ss);
+        komunikat.println(ss);
     }
 }
 
