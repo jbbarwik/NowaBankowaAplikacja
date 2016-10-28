@@ -8,7 +8,6 @@ public class Bank {
         PrintStream komunikat = System.out;
         zrobOperacje(inn, komunikat);
     }
-
     public void zrobOperacje(Scanner inn, PrintStream komunikat) {
         Konto konto1 = new Konto("123456789", "Kowalski", 0);
         Konto konto2 = new Konto("123456766", "Kowalska", 0);
