@@ -9,10 +9,11 @@ import static spark.Spark.get;
 public class TestPkoPPWeb {
 
     public static void main(String[] args) throws FileNotFoundException {
-        // Czytanie z pliku
-        File plikZOperacjami = new File("test_pp.txt");
-        Scanner scanner2 = new Scanner(plikZOperacjami);
+
+
         get("/hello", (req, res) -> {
+            String daneWejsciowe = req.queryParams("wplata") + "\n" + req.queryParams("przelew") + "\n";
+            Scanner scanner2 = new Scanner(daneWejsciowe);
             ServletOutputStream outputStream = res.raw().getOutputStream();
             new Bank().zrobOperacje(scanner2, new PrintStream(outputStream));
         return null;
