@@ -6,7 +6,13 @@ import java.util.Scanner;
 
 import static spark.Spark.get;
 
+
+/*
+* Aplikacja webowa oparta o framework: http://sparkjava.com/
+*
+*/
 public class TestPkoPPWeb {
+
 
     public static void main(String[] args) throws FileNotFoundException {
 
