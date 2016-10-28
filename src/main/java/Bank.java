@@ -9,12 +9,13 @@ public class Bank {
 
         System.out.println("Podaj wartość wpłaty na konto2");
 
-        int wpłatain = inn.nextInt();
+        int wpłatain = inn.nextInt(); ///<---- nowa zmienna przechowująca dane ze skannera
 
-        konto2.wplata(wpłatain);
+        konto2.wplata(wpłatain); ///<---wywołanie wpłaty
 
         System.out.println("Podaj wartość przelewu z 2 na 1");
-        int przelewin = inn.nextInt();
+
+        int przelewin = inn.nextInt(); ///<-nowa zmienna przechowująca dane ze skannera
         konto2.przelewNa(konto1, przelewin); ///<---- wywołanie przelewu
 
         System.out.println("saldo konta1: "+konto1.saldo);
