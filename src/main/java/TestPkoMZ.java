@@ -10,7 +10,7 @@ public class TestPkoMZ {
 	    	
 	    	Scanner nowyScanner = new Scanner(file);
       
-	        new Bank().zrobOperacje(nowyScanner);
+	        new Bank().zrobOperacje(nowyScanner, System.out);
  
 	        
 	}
