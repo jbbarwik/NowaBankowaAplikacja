@@ -7,5 +7,6 @@ public class TestPkoDZ_2 {
         Scanner scanner = new Scanner(new File("testPkoDZ.txt"));
         new Bank().zrobOperacje(scanner, System.out);
 //        System.out odpowiada za to, że wywołujemy na PrintStreamie nasz komunikat (w klasie Bank)
+//        Tu widzimy naszą aplikację Webową: http://localhost:4567/hello - tak jak nadaliśmy Stringa w Spark.get
     }
 }
