@@ -9,7 +9,7 @@ import static spark.Spark.get;
 public class TestPkoPPWeb {
 
     public static void main(String[] args) throws FileNotFoundException {
-
+        // Czytanie z pliku
         File plikZOperacjami = new File("test_pp.txt");
         Scanner scanner2 = new Scanner(plikZOperacjami);
         get("/hello", (req, res) -> {
