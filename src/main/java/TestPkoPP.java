@@ -9,7 +9,8 @@ public class TestPkoPP {
         File plikZOperacjami = new File("test_pp.txt");
         Scanner scanner2 = new Scanner(plikZOperacjami);
         PrintStream printStream = new PrintStream(new File("wynik_test_pp.txt"));
-        new Bank(scanner2, printStream).zrobOperacje();
+        Bank pko = new ParaBankJanka(scanner2, printStream);
+        pko.zrobOperacje();
     }
 
 }

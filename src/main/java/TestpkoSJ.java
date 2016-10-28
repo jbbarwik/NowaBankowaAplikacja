@@ -8,7 +8,7 @@ public class TestpkoSJ {
         public static void main(String[] args) throws FileNotFoundException {
             File plikZOperacji = new File("test.txt");
             Scanner scanner2 = new Scanner(plikZOperacji);
-            new Bank(scanner2, System.out).zrobOperacje(); // No Comments
+            new ParaBankJanka(scanner2, System.out).zrobOperacje(); // No Comments
         }
     }
 

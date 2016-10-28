@@ -1,5 +1,4 @@
 import javax.servlet.ServletOutputStream;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.util.Scanner;
@@ -24,7 +23,7 @@ public class TestPkoPPWeb {
             String daneWejsciowe = req.queryParams("wplata") + "\n" + req.queryParams("przelew") + "\n";
             Scanner scanner2 = new Scanner(daneWejsciowe);
             ServletOutputStream outputStream = res.raw().getOutputStream();
-            new Bank(scanner2, new PrintStream(outputStream)).zrobOperacje();
+            new ParaBankJanka(scanner2, new PrintStream(outputStream)).zrobOperacje();
         return null;
         });
 
