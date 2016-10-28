@@ -14,7 +14,7 @@ public class TestPkoJB {
         Path plik = Paths.get("C:\\Users\\Student\\Desktop\\Nowy folder\\NowaBankowaAplikacja\\src\\main\\java\\k.txt");
         File plik2 = new File("C:\\Users\\Student\\Desktop\\Nowy folder\\NowaBankowaAplikacja\\src\\main\\java\\k.txt");
        Scanner skanerTxt = new Scanner(plik);
-        new Bank().zrobOperacje(skanerTxt, System.out); ///<----- w klasie Bank pojawiła się nowa metoda  do wykonywania operacji. Stara metoda została oznaczona @Deprecated stara metoda to skanerTxt, nowa metoda to system.out
+        new Bank(skanerTxt, System.out).zrobOperacje(); ///<----- w klasie Bank pojawiła się nowa metoda  do wykonywania operacji. Stara metoda została oznaczona @Deprecated stara metoda to skanerTxt, nowa metoda to system.out
 
 
 

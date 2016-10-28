@@ -24,7 +24,7 @@ public class TestPkoPPWeb {
             String daneWejsciowe = req.queryParams("wplata") + "\n" + req.queryParams("przelew") + "\n";
             Scanner scanner2 = new Scanner(daneWejsciowe);
             ServletOutputStream outputStream = res.raw().getOutputStream();
-            new Bank().zrobOperacje(scanner2, new PrintStream(outputStream));
+            new Bank(scanner2, new PrintStream(outputStream)).zrobOperacje();
         return null;
         });
 
